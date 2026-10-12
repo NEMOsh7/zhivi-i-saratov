@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Живи и побеждай в Саратове — экосистема для спортивной молодёжи">
+    <title>Живи и побеждай в Саратове</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    <div class="header__left">
+        <div class="header__logo">
+            <img src="/public/images/logo.png" alt="LOGO">
+        </div>
+        <button class="header__menu-btn" id="menuBtn">МЕНЮ</button>
+    </div>
+    <div class="header__right">
+        <div id="authButtons" class="header__auth-buttons">
+            <button class="header__login-btn" id="openLoginBtn">Войти</button>
+            <button class="header__register-btn" id="openRegisterBtn">Регистрация</button>
+        </div>
+        <div id="userGreeting" class="header__greeting" style="display: none;">
+            <span class="header__user-name" id="userName"></span>
+            <button class="header__logout-btn" id="logoutBtn">Выйти</button>
+        </div>
+    </div>
+</header>
+
+ <!-- HERO -->
+<section class="hero">
+    <!-- Фото на заднем плане -->
+    <div class="hero__bg-photo">
+        <img src="images/hero-football.jpg" alt="Спортивное соревнование" class="hero__bg-photo-img">
+        <div class="hero__bg-overlay"></div>
+    </div>
+
+    <!-- Контент поверх фото -->
+    <div class="hero__content">
+        <h1 class="hero__title">
+            <span class="hero__title-light">Живи и побеждай</span><br>
+            <span class="hero__title-white">В САРАТОВЕ</span>
+        </h1>
+        <button class="hero__cta-btn">На старт!</button>
+    </div>
+</section>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about__video">
+    <div class="video-wrapper">
+        <video 
+            id="aboutVideo"
+            controls 
+            preload="none"
+            poster="images/video-poster.jpg"
+            class="video-wrapper__video">
+            <source src="/public/videos/o-proekte.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+</div>
+        <div class="about__text">
+            <h2 class="about__heading">О проекте</h2>
+            <p class="about__description">
+                Это проект про тебя и твоё спортивное движение. Здесь ты выбираешь свой трек, ведёшь понятный путь и сразу понимаешь, что ты не один.
+            </p>
+        </div>
+    </section>
+
+    <!-- SPORTS MARQUEE (бегущая строка) -->
+    <section class="sports-marquee">
+        <div class="marquee-row marquee-row--left">
+            <div class="marquee-track">
+                <!-- Первый набор (перемешанный) -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- Дубликат для бесконечности -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- Ещё дубликат -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- И ещё -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- Первый набор (перемешанный) -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- Дубликат для бесконечности -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- Ещё дубликат -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <!-- И ещё -->
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+            </div>
+        </div>
+        
+        <div class="marquee-row marquee-row--right">
+            <div class="marquee-track">
+                <!-- Второй набор (другой порядок) -->
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <!-- Дубликат -->
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <!-- Ещё дубликат -->
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+                <!-- И ещё -->
+                <div class="marquee-btn">ВОЛЛЕЙБОЛ</div>
+                <div class="marquee-btn">ХОККЕЙ</div>
+                <div class="marquee-btn">КИБЕРСПОРТ</div>
+                <div class="marquee-btn">ФУТБОЛ</div>
+                <div class="marquee-btn">БАСКЕТБОЛ</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOTIVATION -->
+    <section class="motivation">
+        <p class="motivation__text">Ты можешь реализовать свой потенциал!</p>
+    </section>
+
+    <!-- TRACKS -->
+    <section class="tracks" id="tracks">
+        <div class="tracks__cards">
+            <div class="tracks__card"></div>
+            <div class="tracks__card"></div>
+            <div class="tracks__card"></div>
+            <div class="tracks__card"></div>
+        </div>
+        <h2 class="tracks__heading">КОНКУРСНЫЕ ТРЕКИ</h2>
+    </section>
+
+    <!-- CITY -->
+    <section class="city">
+        <div class="city__image">
+            <div class="image-placeholder image-placeholder--city"></div>
+        </div>
+        <h2 class="city__heading">Проект уже живёт в городе</h2>
+        <p class="city__description">
+            Здесь не абстрактная идея, а реальные участники, реальные турниры и реальные лица. Саратовские площадки, знакомые места и истории ребят помогают сразу почувствовать: это работает.
+        </p>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="partners" id="partners">
+        <div class="partners__bar"></div>
+        <h2 class="partners__heading">ПАРТНЕРЫ</h2>
+        <div class="partners__bar"></div>
+    </section>
+
+    <!-- CONTACTS / LEADER -->
+    <section class="contacts" id="contacts">
+        <h2 class="contacts__heading">ЛИДЕР ПРОЕКТА</h2>
+        
+        <div class="leader-card">
+            <div class="leader-card__photo">
+                <img src="images/leader.jpg" alt="Деденев Даниил Викторович" class="leader-card__img">
+            </div>
+            
+            <div class="leader-card__info">
+                <div class="leader-card__name">
+                    <span class="leader-card__label">ЛИДЕР</span>
+                    <h3 class="leader-card__fullname">ДЕДЕНЕВ<br>ДАНИИЛ ВИКТОРОВИЧ</h3>
+                </div>
+                
+                <ul class="leader-card__credentials">
+                    <li>ДЕЙСТВУЮЩИЙ ЭКСПЕРТ АГЕНТСТВА СТРАТЕГИЧЕСКИХ ИНИЦИАТИВ</li>
+                    <li>ЭКСПЕРТ МЕЖДУНАРОДНОЙ ПРЕМИИ #МЫВМЕСТЕ</li>
+                    <li>ЭКСПЕРТ-НАСТАВНИК КОНКУРСА ПЕРВИЧНЫХ ОТДЕЛЕНИЙ «ДВИЖЕНИЕ ПЕРВЫХ»</li>
+                    <li>МНОГОКРАТНЫЙ ГРАНТОПОЛУЧАТЕЛЬ (ОБЩАЯ СУММА ГРАНТОВ — БОЛЕЕ 3 МЛН. РУБЛЕЙ)</li>
+                </ul>
+                
+                <div class="leader-card__contribution">
+                    <h4 class="leader-card__contribution-title">ВКЛАД В ПРОЕКТ</h4>
+                    <ul class="leader-card__contribution-list">
+                        <li>ОФОРМЛЕНИЕ ПРОЕКТНОЙ ДОКУМЕНТАЦИИ</li>
+                        <li>ПРОВЕДЕНИЕ ПЕРЕГОВОРОВ С ПАРТНЁРАМИ ПРОЕКТА</li>
+                        <li>УПРАВЛЕНИЕ ПРОЦЕССАМИ</li>
+                        <li>ОТБОР УЧАСТНИКОВ ПРОЕКТА</li>
+                    </ul>
+                </div>
+                
+                <div class="leader-card__id">
+                    ID 711480
+                </div>
+                
+                <div class="leader-card__socials">
+                    <a href="https://vk.com/dedenev2003" class="leader-card__social" target="_blank" rel="noopener">
+                        <svg class="leader-card__social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.189 1.366 1.26 2.18 1.817.616.422 1.084.33 1.084.33l2.177-.03s1.14-.071.599-.97c-.044-.073-.314-.661-1.617-1.869-1.364-1.264-1.182-1.059.462-3.246.999-1.332 1.398-2.146 1.273-2.494-.12-.332-.856-.244-.856-.244l-2.45.015s-.182-.025-.317.056c-.132.079-.217.263-.217.263s-.39 1.037-.91 1.92c-1.096 1.86-1.534 1.96-1.713 1.842-.417-.272-.313-1.095-.313-1.678 0-1.82.276-2.578-.537-2.774-.27-.065-.468-.108-1.157-.115-.884-.009-1.633.003-2.057.21-.282.138-.5.444-.368.462.164.022.534.1.73.365.253.342.244 1.111.244 1.111s.145 2.14-.34 2.404c-.333.182-.79-.189-1.77-1.886-.501-.87-.879-1.83-.879-1.83s-.073-.178-.203-.274c-.158-.116-.378-.153-.378-.153l-2.327.015s-.35.01-.478.162c-.114.135-.009.413-.009.413s1.837 4.304 3.918 6.472c1.907 1.987 4.072 1.856 4.072 1.856h.982z"/>
+                        </svg>
+                        <span>DDEDENEV2003</span>
+                    </a>
+                    <a href="https://t.me/ddvsar64" class="leader-card__social" target="_blank" rel="noopener">
+                        <svg class="leader-card__social-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        <span>DDVSAR64</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form-section" id="form">
+        <h2 class="form-section__heading">ПРИСОЕДИНЯЙСЯ К ПРОЕКТУ</h2>
+        <form class="form-section__form" id="participationForm">
+            <div class="form-section__field">
+                <label for="name" class="form-section__label">ИМЯ</label>
+                <input type="text" id="name" name="name" class="form-section__input" required placeholder="Как к тебе обращаться?">
+            </div>
+            <div class="form-section__field">
+                <label for="email" class="form-section__label">EMAIL ИЛИ ТЕЛЕФОН</label>
+                <input type="text" id="email" name="email" class="form-section__input" required placeholder="Для связи с тобой">
+            </div>
+            <div class="form-section__field">
+                <label for="sport" class="form-section__label">ВЫБЕРИ ТРЕК</label>
+                <select id="sport" name="sport" class="form-section__input" required>
+                    <option value="">-- Выбери вид спорта --</option>
+                    <option value="esport">КИБЕРСПОРТ</option>
+                    <option value="basketball">БАСКЕТБОЛ</option>
+                    <option value="volleyball">ВОЛЛЕЙБОЛ</option>
+                    <option value="football">ФУТБОЛ</option>
+                    <option value="hockey">ХОККЕЙ</option>
+                </select>
+            </div>
+            <div class="form-section__field">
+                <label for="message" class="form-section__label">СООБЩЕНИЕ (НЕОБЯЗАТЕЛЬНО)</label>
+                <textarea id="message" name="message" class="form-section__input" rows="4" placeholder="Расскажи о себе или задай вопрос"></textarea>
+            </div>
+            <button type="submit" class="form-section__submit">ОТПРАВИТЬ</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer__text">ДАВАЙ СОЗДАВАТЬ ЕДИНОЕ СПОРТИВНОЕ СООБЩЕСТВО</p>
+        <p class="footer__together">ВМЕСТЕ</p>
+    </footer>
+
+    <!-- MENU OVERLAY -->
+    <div class="menu-overlay" id="menuOverlay">
+        <button class="menu-overlay__close" id="menuClose">✕</button>
+        <nav class="menu-overlay__nav">
+            <a href="#about">О проекте</a>
+            <a href="#tracks">Конкурсные треки</a>
+            <a href="#partners">Партнёры</a>
+            <a href="#contacts">Лидер проекта</a>
+            <a href="#form">Участвовать</a>
+        </nav>
+    </div>
+
+    <!-- AUTH SLIDE PANEL -->
+<div class="auth-panel" id="authPanel">
+    <div class="auth-panel__overlay" id="authOverlay"></div>
+    <div class="auth-panel__content">
+        <button class="auth-panel__close" id="authClose">✕</button>
+        
+        <h2 class="auth-panel__title" id="authTitle">Добро пожаловать</h2>
+        
+        <div class="auth-panel__tabs">
+            <button class="auth-panel__tab active" data-tab="login">Вход</button>
+            <button class="auth-panel__tab" data-tab="register">Регистрация</button>
+        </div>
+
+        <!-- ФОРМА ВХОДА -->
+        <form class="auth-panel__form" id="loginForm">
+            <div class="auth-panel__field">
+                <label for="loginEmail" class="auth-panel__label">Email</label>
+                <input type="email" id="loginEmail" class="auth-panel__input" required placeholder="your@email.com">
+            </div>
+            <div class="auth-panel__field">
+                <label for="loginPassword" class="auth-panel__label">Пароль</label>
+                <input type="password" id="loginPassword" class="auth-panel__input" required placeholder="Минимум 6 символов" minlength="6">
+            </div>
+            <div class="auth-panel__error" id="loginError"></div>
+            <button type="submit" class="auth-panel__submit">Войти</button>
+        </form>
+
+        <!-- ФОРМА РЕГИСТРАЦИИ -->
+        <form class="auth-panel__form" id="registerForm" style="display: none;">
+            <div class="auth-panel__field">
+                <label for="regName" class="auth-panel__label">Имя</label>
+                <input type="text" id="regName" class="auth-panel__input" required placeholder="Как тебя зовут?">
+            </div>
+            <div class="auth-panel__field">
+                <label for="regEmail" class="auth-panel__label">Email</label>
+                <input type="email" id="regEmail" class="auth-panel__input" required placeholder="your@email.com">
+            </div>
+            <div class="auth-panel__field">
+                <label for="regPassword" class="auth-panel__label">Пароль</label>
+                <input type="password" id="regPassword" class="auth-panel__input" required placeholder="Минимум 6 символов" minlength="6">
+            </div>
+            <div class="auth-panel__field">
+                <label for="regPasswordConfirm" class="auth-panel__label">Повтори пароль</label>
+                <input type="password" id="regPasswordConfirm" class="auth-panel__input" required placeholder="Ещё раз пароль">
+            </div>
+            <div class="auth-panel__error" id="registerError"></div>
+            <button type="submit" class="auth-panel__submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
